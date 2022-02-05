@@ -22,7 +22,7 @@ tasks.named('test') {
 }
 
 bootJar {
-	mainClassName = 'com.example.temp.TempApplication'
+	mainClass = 'com.example.temp.TempApplication'
 }
 
 bootRun {
