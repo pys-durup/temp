@@ -4,8 +4,6 @@ VOLUME /tmp
 
 EXPOSE 8080
 
-ARG JAR_FILE=build/libs/temp-0.0.1-SNAPSHOT.jar
+COPY build/libs/demo-0.0.1-SNAPSHOT.jar .
 
-ADD ${JAR_FILE} temp.jar
-
-ENTRYPOINT ["java","=jar","/temp.jar"]
+CMD java -jar demo-0.0.1-SNAPSHOT.jar
