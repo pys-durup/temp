@@ -4,6 +4,6 @@ VOLUME /tmp
 
 EXPOSE 8080
 
-COPY build/libs/demo-0.0.1-SNAPSHOT.jar .
+COPY build/libs/temp-0.0.1-SNAPSHOT.jar .
 
-CMD java -jar demo-0.0.1-SNAPSHOT.jar
+CMD java -jar temp-0.0.1-SNAPSHOT.jar
